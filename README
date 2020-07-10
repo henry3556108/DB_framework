@@ -1,0 +1,36 @@
+DBCreater need database name to init
+creater = DBCreater(db_name)
+
+creater.insert(command, data)
+command can be "multiple category"
+return data will be an array or list content dictionary elements
+each dictionary structure will depend on which command you insert
+
+folder data structure
+this is my folder structure
+
+root/
+|- database_creater
+|- data/
+|   |- category 0/ (name must be integer)
+|   |   |- file
+|   |   |- file
+|   |   |- file
+|   |- category 1/ (name must be integer)
+|   |   |- file
+|   |   |- file
+|   |   |- file
+|   |- category 2/ (name must be integer)
+|   |   |- file
+|   |   |- file
+|   |   |- file
+|   |- category 3/ (name must be integer)
+|   |   |- file
+|   |   |- file
+|   |   |- file 
+
+creater.fetch(sql)
+sql need to be the SQL select syntax some have to fetch_all
+
+creater.commit(sql)
+sql need to be the SQL syntax some have to commit
